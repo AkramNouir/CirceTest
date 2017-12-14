@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - checkout
-      - run: sbrew install ruby
+      - run: brew install ruby
       - run: mkdir $FL_OUTPUT_DIR
       - run: bundle install
       - run:
