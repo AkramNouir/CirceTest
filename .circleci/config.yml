@@ -11,6 +11,11 @@ jobs:
 
     steps:
       - checkout
+      
+      - run:
+      name: Install fastlane
+      command: sudo gem install bundler
+
       - run: mkdir $FL_OUTPUT_DIR
       - run: bundle install
       - run:
