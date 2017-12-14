@@ -11,11 +11,7 @@ jobs:
 
     steps:
       - checkout
-      # Install bundler
-      - run:
-      name: Install bundler
-      command: sudo gem install bundler
-
+      - run: sudo gem install bundler
       - run: mkdir $FL_OUTPUT_DIR
       - run: bundle install
       - run:
