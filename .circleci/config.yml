@@ -7,11 +7,14 @@ jobs:
     environment:
       FL_OUTPUT_DIR: /Users/distiller/project/output
       FASTLANE_LANE: test
-    shell: /bin/bash --login -o pipefail
+    shell: /bin/bash --login -eo pipefail
 
     steps:
       - checkout
       - run: brew install ruby
+      - run:
+          name: Set Ruby Version
+          command:  echo "ruby-2.4" > ~/.ruby-version
       - run: mkdir $FL_OUTPUT_DIR
       - run: bundle install
       - run:
