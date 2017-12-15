@@ -11,7 +11,6 @@ jobs:
 
     steps:
       - checkout
-      - run: brew install ruby
       - run:
           name: Set Ruby Version
           command:  echo "ruby-2.4" > ~/.ruby-version
