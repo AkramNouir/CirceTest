@@ -12,6 +12,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Get sim list
+          command: xcrun simctl list
+      - run:
           name: Set Ruby Version
           command:  echo "ruby-2.4" > ~/.ruby-version
       - run: mkdir $FL_OUTPUT_DIR
