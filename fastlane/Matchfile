@@ -1,4 +1,4 @@
-git_url "https://github.com/AkramNouir/CirceTest.git"
+git_url "https://github.com/AkramNouir/CIiOSApplication"
 
 type "development" # The default type, can be: appstore, adhoc, enterprise or development
 
